@@ -48,6 +48,7 @@ texto-pro/
 ├── venv/
 │   └── ... (arquivos da virtual environment)
 └── requirements.txt
+```
 
 ### Arquivos e Funções
 
@@ -107,71 +108,79 @@ Após a instalação, adicione o CUDA ao seu PATH:
   ```bash
   export PATH=/usr/local/cuda/bin:$PATH
   export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+
 Em seguida, recarregue o ~/.bashrc:
-
-
 source ~/.bashrc
+
+
 No Windows:
 Adicione C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4\bin ao PATH nas variáveis de ambiente do sistema.
+
 5. Instale o cuDNN
 Baixe o cuDNN: Acesse o site de download do cuDNN e baixe a versão que corresponde à sua versão do CUDA.
+
+
+
 Instale o cuDNN:
+
 No Linux:
 
 Extraia os arquivos do cuDNN e copie-os para os diretórios do CUDA:
-
-
 tar -xzvf cudnn-<version>-linux-x64-v<version>.tgz
 sudo cp cuda/include/cudnn*.h /usr/local/cuda/include
 sudo cp -P cuda/lib64/libcudnn* /usr/local/cuda/lib64
 sudo chmod a+r /usr/local/cuda/include/cudnn*.h /usr/local/cuda/lib64/libcudnn*
+
 No Windows:
 
 Extraia os arquivos do cuDNN e copie-os para os diretórios do CUDA. Normalmente, você colocará os arquivos no diretório C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.4.
+
 6. Verifique a Instalação
+
 Para verificar se o CUDA e o cuDNN estão instalados corretamente, execute os seguintes comandos:
-
-
 nvcc --version
 Você deve ver a versão do CUDA Toolkit instalada.
 
 7. Instale o PyTorch com Suporte a CUDA
+
 Finalmente, instale o PyTorch com suporte a CUDA:
-
-
 pip install torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/cu11x
-8. Verifique se o PyTorch Detecta a GPU
-Para garantir que o PyTorch está configurado corretamente para usar a GPU, execute o seguinte código no Python:
 
+8. Verifique se o PyTorch Detecta a GPU
+
+Para garantir que o PyTorch está configurado corretamente para usar a GPU, execute o seguinte código no Python:
 
 import torch
 print(torch.cuda.is_available())
 Se a instalação estiver correta, isso deve retornar True.
 
 Instalação do Projeto
+
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/transcritor.git
-cd transcritor/novo
-Crie um ambiente virtual:
+git clone https://github.com/ecodelearn/textopro.git
+cd textopro
 
+Crie um ambiente virtual:
 
 python -m venv venv
 source venv/bin/activate   # No Windows, use `venv\Scripts\activate`
+
 Instale as dependências:
 
-
 pip install -r requirements.txt
-Instale o ffmpeg e yt-dlp, se ainda não estiverem instalados:
 
+Instale o ffmpeg e yt-dlp, se ainda não estiverem instalados:
 
 sudo apt-get install ffmpeg
 pip install yt-dlp
+
 Uso
+
 Execute o script principal:
 
-
 python main.py
+
 Siga as instruções na tela:
 
 Escolha fornecer um caminho para um arquivo .mp4 ou baixar do YouTube.
