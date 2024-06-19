@@ -1,0 +1,7 @@
+yt-dlp
+openai-whisper
+torch
+deep-translator
+langdetect
+tqdm
+numpy
