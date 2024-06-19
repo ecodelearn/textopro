@@ -35,23 +35,19 @@ O script processará o áudio, gerará a transcrição e a tradução, e salvar�
 
 ### Estrutura do Projeto
 
-transcritor/
-│
-├── novo/
-│ ├── init.py
-│ ├── downloader.py
-│ ├── file_manager.py
-│ ├── main.py
-│ ├── transcriber.py
-│ ├── translator.py
-│ ├── utils.py
-│ └── whisper_utils.py
-│
+```plaintext
+texto-pro/
+├── __init__.py
+├── downloader.py
+├── file_manager.py
+├── main.py
+├── transcriber.py
+├── translator.py
+├── utils.py
+├── whisper_utils.py
 ├── venv/
-│ └── ... (arquivos da virtual environment)
-│
+│   └── ... (arquivos da virtual environment)
 └── requirements.txt
-
 
 ### Arquivos e Funções
 
