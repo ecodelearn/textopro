@@ -1,4 +1,6 @@
-# Transcritor e Tradutor de Áudio e Vídeo
+# TextoPro
+
+## Transcritor e Tradutor de Áudio e Vídeo
 
 Este projeto é um transcritor e tradutor de áudio automatizado usando Whisper da OpenAI. O script pode baixar vídeos do YouTube, extrair o áudio, transcrever e traduzir o texto, salvando em arquivos de texto separados.
 
