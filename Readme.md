@@ -14,7 +14,7 @@ Este projeto é um transcritor e tradutor de áudio automatizado usando Whisper 
 ## Créditos
 
 Daniel Dias  
-Site: [https://inarte.com.br](https://inarte.com.br)  
+Site: [https://linuxgo.com.br](https://linuxgo.com.br)  
 Administrador da Comunidade Sandeco e apoiador do canal [YouTube Sandeco](https://youtube.com/@sandeco)
 
 Matheus Bach  
@@ -226,7 +226,7 @@ This project is an automated audio transcriber and translator using OpenAI's Whi
 ## Credits
 
 Daniel Dias  
-Website: [https://inarte.com.br](https://inarte.com.br)  
+Website: [https://linuxgo.com.br](https://linuxgo.com.br)  
 Administrator of Sandeco Community and supporter of [YouTube Sandeco](https://youtube.com/@sandeco)
 
 Matheus Bach  
